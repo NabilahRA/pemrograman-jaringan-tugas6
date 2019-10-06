@@ -34,7 +34,10 @@ public class PushBackReader {
                         
                         reader.unread(words,0,0);//modifikasi pertanyaan no 1
                         
+                        words = new char[s.length()];
                         reader2.read(words);//tambahan pertanyaan 1
+                        System.out.println(new String (words,0,8));
+                        System.out.println(new String (words,0,s.length()));
                     } catch (IOException ex) {
                         Logger.getLogger(PushBackReader.class.getName()).log(Level.SEVERE, null, ex);
                     }
